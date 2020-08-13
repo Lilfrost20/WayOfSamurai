@@ -1,0 +1,7 @@
+
+.img {
+    grid-area: img;
+    background: url('../../../icons/galaxy.jpg') no-repeat center;
+    width: 100%;
+    border-radius: 10px;
+}

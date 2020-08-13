@@ -1,0 +1,11 @@
+.container {
+    margin: 12px;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: 4fr 8fr;
+    grid-template-areas: 'img img'
+'mypage myposts';
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+
+}

@@ -1,0 +1,10 @@
+.container {
+    margin: 9px 9px 0 9px;
+}
+.search {
+    margin-bottom: 15px;
+}
+.users {
+    display: flex;
+    flex-direction: row;
+}
