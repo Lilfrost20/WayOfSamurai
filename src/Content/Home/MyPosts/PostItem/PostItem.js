@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function PostItem(props) {
+export default function PostItem(props) {
     return (
         <div>
             {props.text}

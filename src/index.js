@@ -1,27 +1,21 @@
 import React from 'react';
 import './index.css';
-import store from "./Redux-context/Store";
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-export const StoreContext = React.createContext(store);
+import {Provider} from 'react-redux'
+import {store} from './Redux/store'
 
-
-let Rerender = () => {
-    ReactDOM.render(
+ReactDOM.render(
         <React.StrictMode>
-            <StoreContext.Provider value={store}>
+            <Provider store={store}>
                 <App/>
-            </StoreContext.Provider>
+            </Provider>
         </React.StrictMode>,
         document.getElementById('root')
     );
-}
-
-Rerender(store.getState())
-
-store.Subscribe(Rerender)
+window.store = store
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

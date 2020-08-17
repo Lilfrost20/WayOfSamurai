@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Content.module.css'
-import {Home} from "./Home/Home";
-import {Dialogs} from "./Dialogs/Dialogs";
+import Home from "./Home/Home";
+import Dialogs  from "./Dialogs/Dialogs";
 import {Route} from "react-router-dom";
 
 
